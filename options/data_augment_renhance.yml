@@ -1,0 +1,50 @@
+# dataset and data loader settings
+datasets:
+  train:
+    name: FFHQ
+    type: FFHQDegradationDataset
+    # dataroot_gt: datasets/ffhq/ffhq_512.lmdb
+    dataroot_gt: datasets/ffhq/ffhq_512
+    io_backend:
+      # type: lmdb
+      type: disk
+
+    # 水平翻转
+    use_hflip: false
+    # 归一化
+    mean: [0.5, 0.5, 0.5]
+    std: [0.5, 0.5, 0.5]
+    out_size: 512
+
+    # 滤波器退化参数
+    blur_kernel_size: 41
+    kernel_list: ['iso', 'aniso']
+    kernel_prob: [0.5, 0.5]
+    blur_sigma: [0.3, 7]
+#    downsample_range: [0.8, 8]
+    # 下采样参数
+    downsample_range: [0.8, 4]
+    # 噪声参数
+    noise_range: [0, 20]
+    # jpeg退化参数
+    jpeg_range: [60, 100]
+
+    # color jitter and gray
+    color_jitter_prob: 0.3
+    color_jitter_shift: 20
+    color_jitter_pt_prob: 0.3
+    gray_prob: 0.01
+
+    # If you do not want colorization, please set
+    # color_jitter_prob: ~
+    # color_jitter_pt_prob: ~
+    # gray_prob: 0.01
+    # gt_gray: True
+
+    brightness: [ 0.5, 1.5 ]
+    contrast: [ 0.5, 1.5 ]
+    saturation: [ 0.5, 1.5 ]
+    hue: [ -0.1, 0.1 ]
+
+
+
