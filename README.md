@@ -1,6 +1,6 @@
 # RestormGAN: Restormer with Generative Facial Prior Towards Real-World Blind Face Restoration
 ## Introduction
-We propose RestormGAN that consists of a CAR encoder and a StyleGAN2 generator for real-world blind face restoration task (i.e., TMDF images) via degradation simulation.
+We propose RestormGAN that consists of a CAR encoder and a StyleGAN2 generator for real-world blind face restoration task (i.e., TMDF images) via degradation simulation.
 Extensive experiments indicate that our RestormGAN achieves state-of-the-art performances for blind face restoration. Our two-stage trained RestormGAN-S1 and RestormGAN-S2 can efficiently enhance real-world blind face images 
 (i.e., TMDF images).
 
