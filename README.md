@@ -38,6 +38,20 @@ Place the downloaded pre-trained model in the following path。
 ./inference_gfpgan.py
 ```
 
+## Citation
+If you find this work useful for your research, please cite our paper
+```
+@article{hu2025restormgan,
+  title={RestormGAN: Restormer with generative facial prior towards real-world blind face restoration},
+  author={Hu, Changhui and Zhu, Weihong and Xu, Lintao and Wu, Fei and Cai, Ziyun and Ye, Mengjun and Lu, Xiaobo},
+  journal={Computers and Electrical Engineering},
+  volume={123},
+  pages={110095},
+  year={2025},
+  publisher={Elsevier}
+}
+```
+
 ## Contact
 If you have any questions, please feel free to contact the authors via 994628118@qq.com.
     
